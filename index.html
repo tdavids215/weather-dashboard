@@ -19,17 +19,19 @@
         <h1 class="col-6">Weather Dashboard</h1>
         <divclass="col-6">
             <form >
-                <input class="form-control mr-sm-2" type="search" placeholder="Enter city name or zipcode" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Enter city name" aria-label="Search">
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </divclass=>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-4">
+            <!-- city weather data in local storage -->
+            <div id="stored-cities" class="col-3"> 
                 
             </div>
-            <div class="col-8">Search Output</div>
+            <!-- current 5 day forecast of searched/selected city -->
+            <div id="current-city" class="col-9">Search Output</div>
         </div>
     </div>
     <script src="assets/script.js"></script>
